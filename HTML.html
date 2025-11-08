@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animea</title> 
+    <link rel="stylesheet" href="CSS.css">    
+    <script>   
+
+    </script>
+ 
+        <style>
+ 
+            /* 全局样式 */
+  
+            html {
+     
+                scroll-behavior: smooth;
+  
+            }
+  
+            body {
+  
+                background-color: #e9e3ee;
+  
+                background-image: 
+   
+                    radial-gradient(circle at 25% 10%, rgb(185 124 238 / 54%) 0%, transparent 50%),
+   
+                    radial-gradient(circle at 75% 80%, rgba(66, 153, 225, 0.1) 0%, transparent 50%);
+   
+            }
+  
+            @keyframes rotation {
+  
+                0% { transform: rotate(0deg); }
+ 
+                100% { transform: rotate(360deg); }
+ 
+            }
+
+            /* 滚动条样式 */
+  
+            ::-webkit-scrollbar {
+ 
+                width: 8px;
+ 
+                height: 8px;
+ 
+            }
+
+  
+            ::-webkit-scrollbar-thumb {
+  
+                background: #c8bed0;
+ 
+                border-radius: 4px;
+  
+            }
+  
+            ::-webkit-scrollbar-thumb:hover {
+  
+                background: #a19ca5b8;
+  
+            }
+ 
+            /* 图片悬停放大效果 */
+ 
+            .img-hover-zoom {
+   
+                overflow: hidden;
+  
+            }
+ 
+            .img-hover-zoom img {
+  
+                transition: transform 0.5s ease;
+  
+            }
+
+            .img-hover-zoom:hover img {
+   
+                transform: scale(1.08);
+
+            }
+ 
+        </style>
+
+    </head>
+    <body>
+       <header class="header">
+
+           <div class="header-container">
+   
+               <div class="header-content">
+  
+                   <div class="brand">
+       
+                       <h2 class="brand-title">Animea</h2>
+
+                   </div>
+               </div>
+     
+           </div>
+  
+       </header>
+
+
+        <div id="main-content">
+ 
+  
+            </div>
+   
+ 
+            <div class="grid-container">
+  
+                <div class="headpicture" style="width: 1920px;height:500px">
+                  <!-- 图片宽度=500px * 80% = 400px -->
+                  <img src="pictures/head picture.jpg" alt="headpicture" class="headpicture">
+                </div>
+ 
+            </div>
+
+        </div>
+       
+            
+            
+            <!-- 基础图片文字卡片 - 可直接复制到需要的位置 -->
+
+    </body>
+  <!-- 5列卡片容器：直接包裹5张卡片 -->
+    <div class="card-grid-5">
+      <!-- 第1张卡片（自定义样式卡片） -->
+      <a href="hmbb.html" class="card-link"a>
+        <div class="custom-card animate-slide-up">
+          <div class="img-hover-zoom">
+            <img src="pictures/hmbb/hmbb.webp" alt="卡片1" class="w-full h-full object-cover">
+          </div>
+          <div class="card-content">
+            <h3 class="card-title">Spongebob Squarepants</h3>
+            <p class="card-desc">Storise of sea creatures.</p>
+          </div>
+        </div>
+      <!-- 第2张卡片 -->
+      
+    <a href="mhls.html" class="card-link"a>
+      <div class="custom-card animate-slide-up">
+        <div class="img-hover-zoom">
+          <img src="pictures/mhls/mhls.webp" alt="卡片2" class="w-full h-full object-cover">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">TOM and JERRY</h3>
+          <p class="card-desc">War of cheese</p>
+        </div>
+      </div>
+      <!-- 第3张卡片 -->
+      <a href="fkdwc.html" class="card-link"a>
+      <div class="custom-card animate-slide-up">
+        <div class="img-hover-zoom">
+          <img src="pictures/fkdwc/fkdwc.webp" alt="卡片3" class="w-full h-full object-cover">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Zootopia</h3>
+          <p class="card-desc">"Try Everything"</p>
+        </div>
+      </div>
+      <!-- 第4张卡片 -->
+      <a href="xmbl.html" class="card-link"a>
+      <div class="custom-card animate-slide-up">
+        <div class="img-hover-zoom">
+          <img src="pictures/xmbl/xmbl.webp" alt="卡片4" class="w-full h-full object-cover">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">My LIttle Pony</h3>
+          <p class="card-desc">Friendship is magic</p>
+        </div>
+      </div>
+      <!-- 第5张卡片 -->
+      <a href="wjzdy.html" class="card-link"a>
+      <div class="custom-card animate-slide-up">
+        <div class="img-hover-zoom">
+          <img src="pictures/wjzdy/wjzdy.webp" alt="卡片5" class="w-full h-full object-cover">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">TOY Story</h3>
+          <p class="card-desc">Have you ever thought that toys are actually alive?</p>
+        </div>
+      </div>
+      <a href="bxqy.html" class="card-link"a>
+      <div class="custom-card animate-slide-up">
+        <div class="img-hover-zoom">
+          <img src="pictures/bxqy/bxqy.jpg" alt="卡片6" class="w-full h-full object-cover">
+        </div>
+        <div class="card-content">
+          <h3 class="card-title">Frozen</h3>
+          <p class="card-desc">Wanderful fantasy of ice and snow</p>
+        </div>
+      </div>
+
+
+    <script src="JS.js"></script>
+  </a>
+  
